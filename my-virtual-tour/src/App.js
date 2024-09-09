@@ -20,9 +20,17 @@ function Globe() {
 function App() {
   return (
     <Canvas camera={{ position: [0, 0, 5] }} style={{ width: "100vw", height: "100vh" }}>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[5, 5, 5]} intensity={1} />
+      <ambientLight intensity={2.0}/>
+
+      {/* Strong directional light */}
+      <directionalLight position={[5, 5, 5]} intensity={1.5} />
+
+      {/* Add a point light to illuminate from the front */}
+      <pointLight position={[-5, -5, 5]} intensity={1.5} />
+      
       <Globe />
+      
+      {/* Orbit controls to allow zoom and rotate */}
       <OrbitControls enableZoom={true} enableRotate={true} />
     </Canvas>
   );
