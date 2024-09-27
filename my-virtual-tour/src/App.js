@@ -24,7 +24,7 @@ function Globe({ onHotspotClick }) {
         <Hotspot lat={0.9} lon={74.2} radius={radius} label="Grocery" onClick={() => onHotspotClick("/images/pano-grocery.jpg")} />
         <Hotspot lat={-15.61} lon={110.2} radius={radius} label="Residential Area " />
         <Hotspot lat={-10.61} lon={94.2} radius={radius} label="Guesthouse " />
-        <Hotspot lat={-29.61} lon={87.2} radius={radius} label="Vaishnavi Hostel" />
+        <Hotspot lat={-29.61} lon={87.2} radius={radius} label="Vaishnavi Hostel"  onClick={() => onHotspotClick("/images/vaishnaviHostel.jpeg")} />
         <Hotspot lat={-23.61} lon={59.2} radius={radius} label="Entrance 1" />
         <Hotspot lat={28.61} lon={29.2} radius={radius} label="LT3 & 4" onClick={() => onHotspotClick("/images/pano-lt3-4.jpg")} />
         <Hotspot lat={28.61} lon={35.2} radius={radius} label="Block D" onClick={() => onHotspotClick("/images/pano-block-d.jpg")} />
